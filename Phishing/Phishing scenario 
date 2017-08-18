@@ -14,3 +14,47 @@ to log in into our fake page ???
 
   link to phishing Scenarios 
   https://security.berkeley.edu/resources/phishing/phishing-examples-archive
+
+
+[Attack Scenarios]
+
+      Basic Scenarios
+      the scenario is to use the attacker machine to make the victim machine
+      browse FakeSite instead of Website.
+
+      DNS Scenarios:
+        scenario 1:
+        take advantages by poisoning the users DNS cache (VictimOne/VictimTwo)
+        scenario 2:
+        take advantages by poisoning the DNS Server so that you
+        can affect more victims
+
+      Victims Scenarios:
+        scenario 1:
+        windows target machine
+        Scenario 2:
+        Android Target
+
+MAchine To install
+    [internet Zone]
+            1. Website (Debian) [webserver] 
+            2. FakeSite (Debian [webserver]
+            3. DNS Server (Debian) 
+            4. GateWay Server (Debian) *Interface one*
+            
+
+    [LAN Zone]
+            4. GateWay Server (Debian) *Interface Two*
+            5. VictimOne (windows)
+            6. VictimTwo (Android)
+            7. Attacker (Debian)
+
+Manual Install:
+    Step 1:
+    Draw network Diagrams
+    1. we can use this website: draw.io 
+    Step 2:
+    downloaded wordpress
+    Step 3:
+    creating all the virtual machines
+
