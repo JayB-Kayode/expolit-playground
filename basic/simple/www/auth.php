@@ -15,7 +15,7 @@ if (file_exists($dbfile)) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 $sql = "select * from users where username = '$username' and password = '$password'";
-echo "SQL: $sql<hr>";
+//echo "SQL: $sql<hr>";
 $result = $db->query($sql);
 $rows = $result->fetchAll();
 if (count($rows) == 1) {

@@ -52,9 +52,15 @@ MAchine To install
 Manual Install:
     Step 1:
     Draw network Diagrams
-    1. we can use this website: draw.io 
     Step 2:
+    1. we can use this website: draw.io 
     downloaded wordpress
     Step 3:
-    creating all the virtual machines
-
+    creating all the virtual machines in virtual box
+    step 4:
+  website and fakesite (install webserver and database server):
+       install apache webserver , maria db or my sql for database, php module for apache
+  DNS Server 
+      install power DNS 
+  Gateway server
+      configuration 
