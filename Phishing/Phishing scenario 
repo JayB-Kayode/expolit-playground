@@ -61,6 +61,18 @@ Manual Install:
   website and fakesite (install webserver and database server):
        install apache webserver , maria db or my sql for database, php module for apache
   DNS Server 
-      install power DNS 
+      install power DNS , mysql server 
   Gateway server
       configuration 
+set ip address of internal network:
+    Website : 192.168.1.4 255.255.255.0
+    fakesite : 192.168.1.5
+    DNS Server: 192.168.1.3
+    GateWay: 192.168.1.2
+
+setting up Dns Server
+typed code : 
+    root@DNSServer:~# pdnsutil create-zone mybank.lcl ns1.names.lcl
+    root@DNSServer:~# pdnsutil create-zone names.lcl ns1.names.lcl
+    root@DNSServer:~# pdnsutil add-record mybank.lcl @ A 192.168.1.4
+    root@DNSServer:~# pdnsutil add-record mybank.lcl www A 192.168.1.4
